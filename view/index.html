@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <!-- <link rel="stylesheet" href="/bower_components/sweetalert/dist/sweetalert.css"> -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  
+    <!--<script src="/bower_components/ngSweetAlert/SweetAlert.min.js"></script>
+    <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script> -->
+  <script src="/js/module.js"></script>
+  <script src="/js/controllers.js"></script>
+  <script src="/js/services.js"></script>
+</head>
+
+<body ng-app='productsApp'>
+<div class="container-fluid">
+    <h1>Products</h1>
+    
+  <div  ng-hide="toggle" class="viewDiv">
+    <button class="btn btn-lg btn-primary begin" ng-click="toggle = !toggle" ui-sref='list'>View Current Products</button>
+  </div> 
+
+  <!-- Where the templates go! -->
+  <ui-view></ui-view>
+  
+  <!--  -->
+  
+</div>
+</body>
+</html>
